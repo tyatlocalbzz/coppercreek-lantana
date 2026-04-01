@@ -5,6 +5,11 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Copper Creek | The Modern Estate</title>
 <meta name="description" content="Custom homes on 1-acre+ lots in Copper Canyon. Same Denton ISD schools. Same golf course. Lower taxes.">
+<meta name="theme-color" content="#fcf9f0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" href="images/copper-creek-logo-black.png">
+<link rel="apple-touch-icon" href="images/copper-creek-logo-black.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
@@ -114,6 +119,14 @@ tailwind.config = {
 .immersive-figure img {
   display: block;
   width: 100%;
+}
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 </style>
 </head>
@@ -281,6 +294,10 @@ tailwind.config = {
 
       <div class="rounded-xl bg-surface-container-low p-8 shadow-sm md:p-12">
         <form action="#" class="grid grid-cols-1 gap-6" id="tour-form" novalidate>
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
           <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
             <div>
               <label class="mb-2 block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant" for="name">Name</label>
@@ -411,6 +428,7 @@ tailwind.config = {
       phone: data.get("phone") || "",
       preferred_time: data.get("preferred_time") || "",
       notes: data.get("notes") || "",
+      website: data.get("website") || "",
       source: "Lantana Landing Page"
     };
 
