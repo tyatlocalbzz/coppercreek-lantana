@@ -1,0 +1,14 @@
+*
+!.vercelignore
+!vercel.json
+!api
+!api/lantana-tour.js
+!lantana-landing-page.html
+!images
+!images/cc-hero-site.png
+!images/cc-second-section.jpg
+!images/cc-pond-dusk.jpg
+!images/cc-open-lot-golden.jpg
+!images/copper-creek-logo-black.png
+!images/textures
+!images/textures/warm-paper-fiber.png

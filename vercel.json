@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/lantana-landing-page.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/lantana-landing-page.html"
+    }
+  ]
+}

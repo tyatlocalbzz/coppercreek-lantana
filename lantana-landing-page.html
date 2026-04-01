@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Copper Creek | The Modern Estate</title>
+<meta name="description" content="Custom homes on 1-acre+ lots in Copper Canyon. Same Denton ISD schools. Same golf course. Lower taxes.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        "surface-bright": "#fcf9f0",
+        "primary-fixed": "#ffdbc9",
+        "secondary-fixed": "#e4e2e1",
+        "on-tertiary-fixed": "#291803",
+        "on-error-container": "#93000a",
+        "tertiary-fixed": "#ffddbb",
+        "on-surface": "#1c1c17",
+        "surface-container-high": "#ebe8df",
+        "on-primary-container": "#ffe4d6",
+        "primary-container": "#8c5e44",
+        "secondary-fixed-dim": "#c8c6c6",
+        "tertiary": "#654c32",
+        "on-error": "#ffffff",
+        "background": "#fcf9f0",
+        "on-primary-fixed": "#311302",
+        "inverse-surface": "#31312b",
+        "on-secondary-fixed-variant": "#474747",
+        "primary": "#70472e",
+        "tertiary-fixed-dim": "#e3c19f",
+        "secondary-container": "#e4e2e1",
+        "surface-tint": "#80543b",
+        "inverse-on-surface": "#f4f1e8",
+        "on-tertiary": "#ffffff",
+        "surface-container-lowest": "#ffffff",
+        "error-container": "#ffdad6",
+        "surface-variant": "#e5e2da",
+        "surface-container-highest": "#e5e2da",
+        "on-secondary-fixed": "#1b1c1c",
+        "surface-dim": "#dddad1",
+        "on-secondary": "#ffffff",
+        "on-tertiary-container": "#ffe5ce",
+        "on-background": "#1c1c17",
+        "on-surface-variant": "#51443e",
+        "on-primary": "#ffffff",
+        "tertiary-container": "#7f6448",
+        "inverse-primary": "#f4ba9b",
+        "primary-fixed-dim": "#f4ba9b",
+        "surface-container": "#f1eee5",
+        "on-primary-fixed-variant": "#653d25",
+        "surface": "#fcf9f0",
+        "on-secondary-container": "#656464",
+        "error": "#ba1a1a",
+        "secondary": "#5f5e5e",
+        "surface-container-low": "#f6f3ea",
+        "outline-variant": "#d5c3ba",
+        "outline": "#83746d",
+        "on-tertiary-fixed-variant": "#5a4229"
+      },
+      fontFamily: {
+        "headline": ["Newsreader", "serif"],
+        "body": ["Manrope", "sans-serif"],
+        "label": ["Manrope", "sans-serif"]
+      },
+      borderRadius: {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "999px"
+      },
+      boxShadow: {
+        "plate": "0 24px 60px rgba(32, 22, 16, 0.12)"
+      }
+    }
+  }
+}
+</script>
+<style>
+.glass-nav {
+  background-color: rgba(252, 249, 240, 0.82);
+  backdrop-filter: blur(12px);
+}
+
+.text-shadow-sm {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+.grain-texture {
+  background-image: url("images/textures/warm-paper-fiber.png");
+  background-size: 820px auto;
+  opacity: 0.035;
+  pointer-events: none;
+}
+
+.nav-logo,
+.footer-logo {
+  display: block;
+  width: auto;
+  height: 44px;
+}
+
+.footer-logo {
+  height: 38px;
+}
+
+.immersive-figure {
+  position: relative;
+}
+
+.immersive-figure img {
+  display: block;
+  width: 100%;
+}
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<nav class="fixed top-0 z-50 w-full glass-nav border-b border-stone-200/30 shadow-sm">
+  <div class="mx-auto flex max-w-screen-2xl items-center justify-between px-6 py-4 md:px-8 md:py-5">
+    <a href="#" aria-label="Copper Creek home">
+      <img class="nav-logo" src="images/copper-creek-logo-black.png" alt="Copper Creek">
+    </a>
+    <div class="hidden items-center gap-10 md:flex">
+      <a class="border-b border-[#8C5E44] pb-1 font-medium text-[#8C5E44] transition-colors duration-300 hover:text-[#8C5E44]" href="#estate">Available Lots</a>
+      <a class="font-medium text-stone-600 transition-colors duration-300 hover:text-[#8C5E44]" href="#comparison">Tax Comparison</a>
+      <a class="font-medium text-stone-600 transition-colors duration-300 hover:text-[#8C5E44]" href="#tour">Tour</a>
+      <a class="font-medium text-stone-600 transition-colors duration-300 hover:text-[#8C5E44]" href="#final-phase">Final Release</a>
+    </div>
+    <a class="rounded-md bg-primary px-5 py-2.5 font-label text-sm font-semibold tracking-wide text-on-primary transition-all hover:opacity-90 active:scale-95 md:px-6" href="#tour">Book a Tour</a>
+  </div>
+</nav>
+
+<main class="relative">
+  <div class="grain-texture absolute inset-0 z-10"></div>
+
+  <section class="relative flex h-screen min-h-[760px] items-center justify-center overflow-hidden" id="hero">
+    <div class="absolute inset-0 z-0">
+      <img class="h-full w-full object-cover brightness-[0.84]" src="images/cc-hero-site.png" alt="Copper Creek aerial at sunset">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/72"></div>
+    </div>
+    <div class="relative z-20 mx-auto max-w-7xl px-6 pt-20 text-center">
+      <span class="mb-6 block font-label text-xs uppercase tracking-[0.3em] text-white/90">New homesites now available at Copper Creek</span>
+      <h1 class="text-shadow-sm mx-auto mb-8 max-w-[13ch] font-headline text-5xl italic leading-[1.03] tracking-tight text-white md:max-w-[18ch] md:text-7xl lg:max-w-[19ch] lg:text-8xl">
+        <span class="md:block">Same schools. Same golf course.</span>
+        <span class="md:block">Half the taxes.</span>
+        <span class="text-primary-fixed md:block">Five times the land.</span>
+      </h1>
+      <div class="flex flex-col items-center justify-center gap-4 md:flex-row">
+        <a class="w-full rounded-md bg-primary px-10 py-4 font-label text-base font-bold tracking-wider text-on-primary shadow-xl transition-all hover:bg-primary/90 md:w-auto" href="#tour">Book a Tour</a>
+        <a class="w-full rounded-md border border-white/20 bg-white/10 px-10 py-4 font-label text-base font-bold tracking-wider text-white backdrop-blur-md transition-all hover:bg-white/20 md:w-auto" href="#comparison">See the Numbers</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-surface py-24 md:py-40" id="estate">
+    <div class="mx-auto grid max-w-screen-2xl grid-cols-1 items-center gap-16 px-8 md:grid-cols-12">
+      <div class="order-2 md:order-1 md:col-span-5">
+        <span class="mb-4 block font-label text-xs font-bold uppercase tracking-widest text-primary">Why families choose Copper Creek</span>
+        <h2 class="mb-8 font-headline text-4xl italic leading-tight text-on-surface md:text-6xl">More room. <br> Same area.</h2>
+        <p class="mb-6 max-w-lg text-lg leading-relaxed text-on-surface-variant">
+          If you love the schools, the golf course, and the routines you already have, you should not have to leave them behind just to get more space. Copper Creek keeps you close to Lantana with more land, a custom home, and a lower tax rate.
+        </p>
+        <p class="mb-8 max-w-lg text-lg leading-relaxed text-on-surface-variant">
+          A limited collection of 1.2-acre homesites, more than 40 homes already built, three ponds, and a neighborhood that already feels established.
+        </p>
+        <div class="flex items-center gap-6">
+          <div class="flex flex-col">
+            <span class="font-headline text-3xl italic text-primary">1.2</span>
+            <span class="font-label text-xs uppercase tracking-tighter text-on-surface-variant">Acre homesites</span>
+          </div>
+          <div class="h-12 w-px bg-outline-variant/30"></div>
+          <div class="flex flex-col">
+            <span class="font-headline text-3xl italic text-primary">Same</span>
+            <span class="font-label text-xs uppercase tracking-tighter text-on-surface-variant">school district</span>
+          </div>
+        </div>
+      </div>
+      <div class="relative order-1 md:order-2 md:col-span-7">
+        <div class="immersive-figure relative z-10 translate-x-4 overflow-hidden rounded-sm shadow-2xl">
+          <img class="aspect-[4/5] h-full w-full object-cover" src="images/cc-second-section.jpg" alt="Aerial view of homes and ponds in Copper Creek">
+        </div>
+        <div class="absolute -bottom-12 -left-12 z-20 hidden aspect-square w-2/3 overflow-hidden rounded-sm border-[12px] border-surface shadow-xl md:block">
+          <img class="h-full w-full object-cover" src="images/cc-pond-dusk.jpg" alt="Copper Creek pond at dusk">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-surface-container-low py-24" id="comparison">
+    <div class="mx-auto mb-16 max-w-4xl px-8 text-center">
+      <span class="mb-4 block font-label text-xs font-bold uppercase tracking-widest text-primary">Tax Comparison</span>
+      <h2 class="mb-6 font-headline text-4xl italic text-on-surface md:text-5xl">The savings add up quickly.</h2>
+      <p class="text-on-surface-variant">Same schools. More land. A meaningfully lower tax rate.</p>
+    </div>
+    <div class="mx-auto max-w-5xl px-8">
+      <div class="overflow-hidden rounded-xl bg-surface-container-lowest shadow-plate">
+        <div class="grid grid-cols-3 bg-surface-container-high px-4 py-6 font-label text-[10px] font-bold uppercase tracking-widest text-primary md:px-8 md:text-xs">
+          <div class="col-span-1">Comparison</div>
+          <div class="text-center">Lantana</div>
+          <div class="text-center">Copper Creek Ph. 3</div>
+        </div>
+        <div class="grid grid-cols-3 items-center px-4 py-8 transition-colors hover:bg-surface-bright md:px-8 md:py-10">
+          <div class="font-semibold text-on-surface">Lot size</div>
+          <div class="text-center text-on-surface-variant">0.15 - 0.25 acres</div>
+          <div class="text-center font-headline text-2xl italic text-primary md:text-3xl">1.2 acres</div>
+        </div>
+        <div class="grid grid-cols-3 items-center bg-surface-container-low/30 px-4 py-8 transition-colors hover:bg-surface-bright md:px-8 md:py-10">
+          <div class="font-semibold text-on-surface">Tax rate</div>
+          <div class="text-center text-on-surface-variant line-through opacity-60">~3.0%</div>
+          <div class="text-center font-headline text-2xl italic text-primary md:text-3xl">1.552%</div>
+        </div>
+        <div class="grid grid-cols-3 items-center px-4 py-8 transition-colors hover:bg-surface-bright md:px-8 md:py-10">
+          <div class="font-semibold text-on-surface">Estimated annual tax on $1.5M home</div>
+          <div class="text-center text-on-surface-variant">~$45,000</div>
+          <div class="text-center font-headline text-2xl italic text-primary md:text-3xl">~$23,280</div>
+        </div>
+        <div class="grid grid-cols-3 items-center bg-surface-container-low/30 px-4 py-8 transition-colors hover:bg-surface-bright md:px-8 md:py-10">
+          <div class="font-semibold text-on-surface">10-year tax savings</div>
+          <div class="text-center text-on-surface-variant">-</div>
+          <div class="text-center font-headline text-2xl italic text-primary md:text-3xl">$200K+</div>
+        </div>
+        <div class="grid grid-cols-3 items-center px-4 py-8 transition-colors hover:bg-surface-bright md:px-8 md:py-10">
+          <div class="font-semibold text-on-surface">Home type</div>
+          <div class="text-center text-on-surface-variant">Production / semi-custom</div>
+          <div class="text-center font-headline text-2xl italic text-primary md:text-3xl">Fully custom</div>
+        </div>
+        <div class="grid grid-cols-3 items-center bg-surface-container-low/30 px-4 py-8 transition-colors hover:bg-surface-bright md:px-8 md:py-10">
+          <div class="font-semibold text-on-surface">Schools</div>
+          <div class="text-center text-on-surface-variant">Denton ISD</div>
+          <div class="text-center font-headline text-2xl italic text-primary md:text-3xl">Denton ISD</div>
+        </div>
+        <div class="grid grid-cols-3 items-center px-4 py-8 transition-colors hover:bg-surface-bright md:px-8 md:py-10">
+          <div class="font-semibold text-on-surface">Golf course access</div>
+          <div class="text-center text-on-surface-variant">Drive on public roads</div>
+          <div class="text-center font-headline text-2xl italic text-primary md:text-3xl">Golf cart access</div>
+        </div>
+      </div>
+      <p class="mt-6 text-center font-body text-[10px] italic text-on-surface-variant/60">
+        *Based on a $1.5M home value and current published tax rates. Verify final figures with your tax advisor.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-surface py-24 md:py-40" id="tour">
+    <div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-20 px-8 lg:grid-cols-2">
+      <div>
+        <h2 class="mb-8 font-headline text-4xl italic leading-tight text-on-surface md:text-6xl">Schedule a private <br> golf cart tour.</h2>
+        <p class="mb-12 text-lg leading-relaxed text-on-surface-variant">
+          Come see the neighborhood, walk the available homesites, and get a feel for the homes already here. We will shape the visit around the home style and setting you have in mind.
+        </p>
+        <div class="space-y-8">
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-2xl text-primary">pin_drop</span>
+            <div>
+              <h4 class="font-label text-sm font-bold uppercase tracking-wide">Location</h4>
+              <p class="text-on-surface-variant">Copper Creek, Copper Canyon, TX</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-2xl text-primary">event_available</span>
+            <div>
+              <h4 class="font-label text-sm font-bold uppercase tracking-wide">Visits</h4>
+              <p class="text-on-surface-variant">Available by appointment</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-2xl text-primary">construction</span>
+            <div>
+              <h4 class="font-label text-sm font-bold uppercase tracking-wide">Builder</h4>
+              <p class="text-on-surface-variant">Mike Cannaday can walk you through the homesites and answer questions about building here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-xl bg-surface-container-low p-8 shadow-sm md:p-12">
+        <form action="#" class="grid grid-cols-1 gap-6" id="tour-form" novalidate>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div>
+              <label class="mb-2 block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant" for="name">Name</label>
+              <input class="w-full rounded-md border-none bg-surface-container-lowest px-4 py-4 text-on-surface focus:ring-1 focus:ring-primary/40" id="name" name="name" placeholder="John Doe" type="text" autocomplete="name" required>
+            </div>
+            <div>
+              <label class="mb-2 block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant" for="email">Email</label>
+              <input class="w-full rounded-md border-none bg-surface-container-lowest px-4 py-4 text-on-surface focus:ring-1 focus:ring-primary/40" id="email" name="email" placeholder="john@example.com" type="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div>
+              <label class="mb-2 block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant" for="phone">Phone</label>
+              <input class="w-full rounded-md border-none bg-surface-container-lowest px-4 py-4 text-on-surface focus:ring-1 focus:ring-primary/40" id="phone" name="phone" placeholder="(555) 000-0000" type="tel" autocomplete="tel" required>
+            </div>
+            <div>
+              <label class="mb-2 block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant" for="preferred_time">Preferred date/time</label>
+              <input class="w-full rounded-md border-none bg-surface-container-lowest px-4 py-4 text-on-surface focus:ring-1 focus:ring-primary/40" id="preferred_time" name="preferred_time" placeholder="Saturday morning" type="text" required>
+            </div>
+          </div>
+          <div>
+            <label class="mb-2 block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant" for="notes">Tell us what you are looking for</label>
+            <textarea class="w-full rounded-md border-none bg-surface-container-lowest px-4 py-4 text-on-surface focus:ring-1 focus:ring-primary/40" id="notes" name="notes" placeholder="Lot preferences, home style, timing, or anything else you would like us to know." rows="4"></textarea>
+          </div>
+          <button class="mt-4 rounded-md bg-primary py-5 font-label text-sm font-bold uppercase tracking-[0.2em] text-on-primary shadow-lg transition-all hover:bg-primary/90" id="submit-btn" type="submit">Request a Tour</button>
+          <div class="font-label text-xs uppercase tracking-[0.24em] text-on-surface-variant">Or call <a class="font-bold text-primary" href="tel:2143080620">214-308-0620</a></div>
+        </form>
+        <div class="hidden border-t border-stone-300/70 pt-6" id="form-status" aria-live="polite">
+          <h4 class="mb-2 font-headline text-3xl italic text-on-surface">Tour request sent.</h4>
+          <p class="text-on-surface-variant">Mike or Valerie will follow up to confirm a time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative overflow-hidden bg-primary py-24" id="final-phase">
+    <div class="absolute inset-0 opacity-10">
+      <img class="h-full w-full object-cover" src="images/cc-open-lot-golden.jpg" alt="Open lot at Copper Creek at sunset">
+    </div>
+    <div class="relative z-10 mx-auto max-w-4xl px-8 text-center">
+      <span class="mb-6 block font-label text-xs font-bold uppercase tracking-[0.4em] text-on-primary-container">A small number remain</span>
+      <h2 class="mb-8 font-headline text-5xl italic leading-tight text-on-primary md:text-7xl">Final release.</h2>
+      <p class="mb-12 text-xl leading-relaxed text-on-primary/80">
+        Around 40 homesites remain, and there is no Phase 4 planned.
+      </p>
+      <div class="inline-flex items-center gap-4 rounded-full border border-white/20 bg-white/10 px-8 py-4 font-label text-sm font-bold tracking-widest text-white backdrop-blur-sm">
+        <span class="material-symbols-outlined text-primary-fixed">priority_high</span>
+        40 LOTS REMAINING
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="w-full border-t border-stone-200/40 bg-stone-100">
+  <div class="mx-auto flex w-full max-w-screen-2xl flex-col items-center justify-between gap-8 px-12 py-16 md:flex-row">
+    <div class="mb-0">
+      <img class="footer-logo mb-4" src="images/copper-creek-logo-black.png" alt="Copper Creek">
+      <p class="max-w-xs text-sm tracking-wide text-stone-500">
+        More room to build, more land to enjoy, and a community that already feels like home.
+      </p>
+    </div>
+    <div class="flex flex-col items-center gap-6 md:items-end">
+      <div class="flex flex-wrap justify-center gap-6 md:justify-end">
+        <a class="text-sm tracking-wide text-stone-500 transition-colors hover:text-stone-900" href="#estate">Available Lots</a>
+        <a class="text-sm tracking-wide text-stone-500 transition-colors hover:text-stone-900" href="#comparison">Tax Comparison</a>
+        <a class="text-sm tracking-wide text-stone-500 transition-colors hover:text-stone-900" href="#tour">Tour</a>
+        <a class="font-semibold text-[#8C5E44] hover:underline" href="mailto:sales@coppercreekluxuryhomes.com">Contact</a>
+      </div>
+      <p class="text-sm tracking-wide text-stone-500">
+        Copper Canyon, TX · <a href="tel:2143080620">214-308-0620</a> · sales@coppercreekluxuryhomes.com
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  var form = document.getElementById("tour-form");
+  var button = document.getElementById("submit-btn");
+  var status = document.getElementById("form-status");
+
+  function showConfirmation() {
+    form.style.display = "none";
+    status.classList.remove("hidden");
+    document.getElementById("tour").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function resetButton() {
+    button.disabled = false;
+    button.textContent = "Request a Tour";
+  }
+
+  function fallbackMailto(payload) {
+    var lines = [
+      "Copper Creek Lantana Tour Request",
+      "================================",
+      "",
+      "NAME: " + payload.name,
+      "EMAIL: " + payload.email,
+      "PHONE: " + payload.phone,
+      "PREFERRED TIME: " + payload.preferred_time,
+      ""
+    ];
+
+    if (payload.notes) {
+      lines.push("NOTES:");
+      lines.push(payload.notes);
+      lines.push("");
+    }
+
+    lines.push("SOURCE: " + payload.source);
+
+    var body = lines.join("\n");
+    window.location.href = "mailto:sales@coppercreekluxuryhomes.com,jeff@localbzz.com,ty@localbzz.com?subject=" + encodeURIComponent("Copper Creek Lantana Tour Request") + "&body=" + encodeURIComponent(body);
+  }
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (!form.reportValidity()) {
+      return;
+    }
+
+    var data = new FormData(form);
+    var payload = {
+      name: data.get("name") || "",
+      email: data.get("email") || "",
+      phone: data.get("phone") || "",
+      preferred_time: data.get("preferred_time") || "",
+      notes: data.get("notes") || "",
+      source: "Lantana Landing Page"
+    };
+
+    button.disabled = true;
+    button.textContent = "Sending...";
+
+    fetch("/api/lantana-tour", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    })
+    .then(function(response) {
+      return response.json().then(function(json) {
+        return { ok: response.ok, data: json };
+      });
+    })
+    .then(function(result) {
+      if (result.ok) {
+        showConfirmation();
+      } else {
+        fallbackMailto(payload);
+        resetButton();
+      }
+    })
+    .catch(function() {
+      fallbackMailto(payload);
+      resetButton();
+    });
+  });
+})();
+</script>
+</body>
+</html>
