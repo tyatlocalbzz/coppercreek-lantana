@@ -144,9 +144,12 @@ tailwind.config = {
     <div class="relative z-20 mx-auto max-w-7xl px-6 pt-20 text-center">
       <span class="mb-6 block font-label text-xs uppercase tracking-[0.3em] text-white/90">New homesites now available at Copper Creek</span>
       <h1 class="text-shadow-sm mx-auto mb-8 max-w-[13ch] font-headline text-5xl italic leading-[1.03] tracking-tight text-white md:max-w-[18ch] md:text-7xl lg:max-w-[19ch] lg:text-8xl">
-        <span class="md:block">Same schools. Same golf course.</span>
-        <span class="md:block">Half the taxes.</span>
-        <span class="text-primary-fixed md:block">Five times the land.</span>
+        <span class="block md:hidden">Same schools.</span>
+        <span class="block md:hidden">Same golf course.</span>
+        <span class="block md:hidden">Half the taxes.</span>
+        <span class="block text-primary-fixed md:hidden">Twice the land.</span>
+        <span class="hidden md:block lg:whitespace-nowrap">Same schools. Same golf course.</span>
+        <span class="hidden md:block lg:whitespace-nowrap"><span class="text-white">Half the taxes.</span> <span class="text-primary-fixed">Twice the land.</span></span>
       </h1>
       <div class="flex flex-col items-center justify-center gap-4 md:flex-row">
         <a class="w-full rounded-md bg-primary px-10 py-4 font-label text-base font-bold tracking-wider text-on-primary shadow-xl transition-all hover:bg-primary/90 md:w-auto" href="#tour">Book a Tour</a>
